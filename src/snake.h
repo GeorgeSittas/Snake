@@ -16,7 +16,6 @@
 #define SNAKE_BODY      'o'
 #define EMPTY           ' '
 #define FOOD            '$'
-#define QUIT            'q'
 
 extern char screen[ROWS][COLUMNS];
 
