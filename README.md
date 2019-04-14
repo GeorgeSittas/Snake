@@ -26,10 +26,10 @@ make clean
 - If you manage to grow the snake to its maximum length, you win.
 - If the snake's head bumps into one of its body pieces, you lose.
 
+![What the actual game looks like](https://imgur.com/Oxw4hcy)
+
 ### Screen configuration
 Two adjacent characters that are located on different lines might be more distant apart than
 when they are on the same line, depending on your terminal window configuration. In that case,
 the snake will seem to move faster when moving vertically. If that bothers you, try adjusting the
 line spacing of your terminal window and select whichever one works best for you.
-
-[Gameplay](https://imgur.com/Oxw4hcy)
