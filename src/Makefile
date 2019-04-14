@@ -14,7 +14,7 @@ snake.o: $(headers_files)
 
 screen.o: $(headers_files)
 
-run: snake
+play: snake
 	./snake
 
 clean:
