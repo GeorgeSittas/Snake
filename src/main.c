@@ -1,5 +1,7 @@
+#include <time.h>
 #include <stdio.h>
 #include <unistd.h>
+#include <stdlib.h>
 #include <ncurses.h>
 
 #include "snake.h"
@@ -8,6 +10,7 @@
 char screen[ROWS][COLUMNS];
 
 int main(void) {
+  srand(time(NULL));
   setup_term(); /* Initializes the curses settings and enters curses mode */
 
   snake_t snake;
