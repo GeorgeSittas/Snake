@@ -1,6 +1,6 @@
 # Snake
 
-This project is currently under development, so feel free to let me know if you find something that bothers you!
+Snake is currently under development, so feel free to let me know if you find something that bothers you!
 
 ### Prerequisites / Dependencies
 This project uses the NCurses C library, so you need to make sure it's already installed in your system.
