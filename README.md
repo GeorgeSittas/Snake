@@ -1,7 +1,8 @@
 # Snake
 
 Snake is currently under development, so feel free to let me know if you find something that bothers you!
-The snake game window will look like this
+The snake game window looks like this:
+
 ![What the actual game looks like](https://i.imgur.com/Oxw4hcy.png)
 
 ### Prerequisites / Dependencies
