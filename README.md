@@ -29,5 +29,5 @@ make clean
 ### Screen configuration
 Two adjacent characters that are located on different lines might be more distant apart than
 when they are on the same line, depending on your terminal window configuration. In that case,
-the snake will seem to move faster when moving vertically. If that bugs you, try adjusting the
+the snake will seem to move faster when moving vertically. If that bothers you, try adjusting the
 line spacing of your terminal window and select whichever one works best for you.
