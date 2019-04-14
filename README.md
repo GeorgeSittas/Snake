@@ -26,7 +26,7 @@ make clean
 - If you manage to grow the snake to its maximum length, you win.
 - If the snake's head bumps into one of its body pieces, you lose.
 
-![What the actual game looks like](https://imgur.com/Oxw4hcy)
+![What the actual game looks like](https://i.imgur.com/Oxw4hcy.png)
 
 ### Screen configuration
 Two adjacent characters that are located on different lines might be more distant apart than
