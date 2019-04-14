@@ -1,6 +1,8 @@
 # Snake
 
 Snake is currently under development, so feel free to let me know if you find something that bothers you!
+The snake game window will look like this
+![What the actual game looks like](https://i.imgur.com/Oxw4hcy.png)
 
 ### Prerequisites / Dependencies
 This project uses the NCurses C library, so you need to make sure it's already installed in your system.
@@ -25,8 +27,6 @@ make clean
 - The snake teleports to the opposing side uppon hitting a side's wall, maintining its direction of movement.
 - If you manage to grow the snake to its maximum length, you win.
 - If the snake's head bumps into one of its body pieces, you lose.
-
-![What the actual game looks like](https://i.imgur.com/Oxw4hcy.png)
 
 ### Screen configuration
 Two adjacent characters that are located on different lines might be more distant apart than
