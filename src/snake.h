@@ -3,7 +3,7 @@
 #include <ncurses.h>
 
 #define COLUMNS   80
-#define ROWS      20
+#define ROWS      25
 #define DELAY 100000
 
 #define HORIZONTAL_WALL '-'
