@@ -1,9 +1,15 @@
 # Snake
 A classic Snake game written in C
 
+### Prerequisites / Dependencies
+The Snake project uses the NCurses C library, so you need to make sure it's already installed in your system.
+([how to install NCurses](https://www.ostechnix.com/how-to-install-ncurses-library-in-linux/))
+
 ### Usage
-- First of all, the NCurses C library is needed ([how to install NCurses](https://www.ostechnix.com/how-to-install-ncurses-library-in-linux/))
-- After you've installed NCurses, you can start the game as follows:
+```
+cd src
+make play
+```
 
 ### How to play
 - 
