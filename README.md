@@ -21,8 +21,8 @@ make clean
 - Once the game has started, you can move using the arrow keys. If you want to exit the game, press q.
 - The snake food is shown as $.
 - The snake teleports to the opposing side uppon hitting a side's wall, maintining its direction of movement.
-- If you manage to reach the snake's maximum length, you win.
-- If the snake head bumps into once of its body pieces, you lose.
+- If you manage to grow the snake to its maximum length, you win.
+- If the snake's head bumps into one of its body pieces, you lose.
 
 ### Screen configuration
 Two adjacent characters that are located on different lines might be more distant apart than
