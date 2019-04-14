@@ -6,9 +6,15 @@ This project uses the NCurses C library, so you need to make sure it's already i
 ([how to install NCurses](https://www.ostechnix.com/how-to-install-ncurses-library-in-linux/))
 
 ### Usage
+#### Starting the game
 ```
 cd src
 make play
+```
+#### File cleanup
+```
+cd src
+make clean
 ```
 
 ### How to play
