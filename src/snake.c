@@ -112,7 +112,8 @@ void process_input(direction_t *direction) {
     case KEY_DOWN:
       if (*direction != NORTH) *direction = SOUTH;
       break;
-    case QUIT:
+    case 'q':
+    case 'Q':
       terminate_game_session("Ciao!");
       break;
   }
