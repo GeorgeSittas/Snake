@@ -57,8 +57,8 @@ int main(void) {
     /* Generate the next food, if the last one was consumed */
     if (food.consumed) food = generate_food();
 
-    /* Finally, apply a small time delay, in order */
-    /* for the snake to move with normal velocity */
+    /* Finally, apply a small time delay, in order for the snake */
+    /* to move with normal velocity and achieve the specified FPS */
 
     usleep(DELAY);
   }
