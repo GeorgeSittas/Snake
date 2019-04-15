@@ -4,7 +4,14 @@
 
 #define COLUMNS   80
 #define ROWS      25
-#define DELAY 100000
+
+#define SEC_IN_MICROSEC 1000000
+
+/* FPS: number of frames per second (basically the frame printing frequency) */
+/* DELAY: time delay needed to achieve the specified FPS (in micro seconds) */
+
+#define FPS 15
+#define DELAY (SEC_IN_MICROSEC / FPS) /* time = 1 (sec) / frequency */
 
 #define HORIZONTAL_WALL '-'
 #define VERTICAL_WALL   '|'
