@@ -1,6 +1,6 @@
-# Snake
+# Snake Game
 
-The snake game window looks like this:
+This is a classic snake game written in C. The game window looks like this:
 
 ![What the actual game looks like](https://i.imgur.com/Oxw4hcy.png)
 
