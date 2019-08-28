@@ -1,4 +1,4 @@
-# Snake Game
+# Snake
 
 This is a classic snake game written in C. The game window looks like this:
 
