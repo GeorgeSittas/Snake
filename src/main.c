@@ -1,13 +1,10 @@
 #include <time.h>
-#include <stdio.h>
 #include <unistd.h>
 #include <stdlib.h>
-#include <ncurses.h>
 
 #include "snake.h"
 
-/* Each game frame will be formed (drawn) and saved in this matrix */
-char screen[ROWS][COLUMNS];
+int score = 0;
 
 int main(void) {
   srand(time(NULL));
@@ -17,7 +14,7 @@ int main(void) {
   food_t food;
 
   init_snake(&snake); /* Creates a snake of length 8 */
-  init_food(&food); /* Generates the first food */
+  init_food(&food);   /* Generates the first food */
 
   while (TRUE) {
     setup_screen(); /* Draw an empty game frame */
@@ -44,6 +41,7 @@ int main(void) {
     {
       snake.length++;
       food.consumed = TRUE;
+      score++;
     }
     else
       advance_tail(&snake);
