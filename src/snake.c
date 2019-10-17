@@ -1,6 +1,4 @@
-#include <stdio.h>
 #include <stdlib.h>
-#include <unistd.h>
 #include <ncurses.h>
 
 #include "snake.h"
@@ -112,8 +110,8 @@ void process_input(direction_t *direction) {
     case KEY_DOWN:
       if (*direction != NORTH) *direction = SOUTH;
       break;
-    case 'q':
     case 'Q':
+    case 'q':
       terminate_game_session("Ciao!");
       break;
   }
@@ -169,6 +167,6 @@ state_t game_state(snake_t snake) {
 
 void terminate_game_session(char *exit_message) {
   endwin(); /* Exits the curses mode */
-  printf("%s\n", exit_message);
+  printf("%s\nScore: %d\n", exit_message, score);
   exit(EXIT_SUCCESS);
 }
