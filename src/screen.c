@@ -1,7 +1,9 @@
-#include <unistd.h>
 #include <ncurses.h>
 
 #include "snake.h"
+
+/* Each game frame will be formed (drawn) and saved in this matrix */
+char screen[ROWS][COLUMNS];
 
 /* Initializes the cursor session settings */
 void setup_term(void) {
@@ -17,16 +19,16 @@ void setup_screen(void) {
   for (int i = 0; i < ROWS; i++) {
     for (int j = 0; j < COLUMNS; j++) {
       if (i == 0 || i == ROWS-1)
-        screen[i][j] = HORIZONTAL_WALL;
+        screen[i][j] = WALL;
       else if (j == 0 || j == COLUMNS-1)
-        screen[i][j] = VERTICAL_WALL;
+        screen[i][j] = WALL;
       else
         screen[i][j] = EMPTY;
     }
   }
 
-  screen[0][0] = screen[ROWS-1][COLUMNS-1] = WALL_CORNER;
-  screen[0][COLUMNS-1] = screen[ROWS-1][0] = WALL_CORNER;
+  screen[0][0] = screen[ROWS-1][COLUMNS-1] = WALL;
+  screen[0][COLUMNS-1] = screen[ROWS-1][0] = WALL;
 }
 
 void draw_food(food_t food) {
