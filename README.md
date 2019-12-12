@@ -22,7 +22,7 @@ make clean
 ```
 
 ### How to play
-- Once the game has started, you can move using the arrow keys. If you want to exit the game, press q.
+- Once the game has started, you can move using the arrow keys. If you want to exit the game, press q or Q.
 - The snake food is shown as $.
 - The snake teleports to the opposing side uppon hitting a side's wall, maintining its direction of movement.
 - If you manage to grow the snake to its maximum length, you win.
