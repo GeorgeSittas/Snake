@@ -2,7 +2,7 @@
 
 This is a classic snake game written in C. The game window looks like this:
 
-![What the actual game looks like](https://i.imgur.com/Oxw4hcy.png)
+![](https://i.imgur.com/Oxw4hcy.png)
 
 ### Prerequisites / Dependencies
 This project uses the NCurses C library, so you need to make sure it's already installed in your system.
