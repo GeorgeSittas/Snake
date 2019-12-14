@@ -2,6 +2,15 @@
 
 #include <ncurses.h> /* This is needed in order to use the bool type */
 
+#define FOOD       '$'
+#define WALL       '#'
+#define NORTH_HEAD '^'
+#define EAST_HEAD  '>'
+#define SOUTH_HEAD 'v'
+#define WEST_HEAD  '<'
+#define SNAKE_BODY 'o'
+#define EMPTY      ' '
+
 typedef enum {STILL_PLAYING, WON, LOST} state_t;
 typedef enum {NORTH, EAST, SOUTH, WEST} direction_t;
 
