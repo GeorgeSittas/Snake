@@ -2,31 +2,29 @@
 #include <unistd.h>
 #include <stdlib.h>
 
-#include "snake.h"
+#include "../include/snake.h"
+#include "../include/screen.h"
+#include "../include/utilities.h"
 
-int score = 0;
+game_t game;
 
 int main(void) {
   srand(time(NULL));
   setup_term(); /* Initializes the curses settings and enters curses mode */
 
-  snake_t snake;
-  food_t food;
-
-  init_snake(&snake); /* Creates a snake of length 8 */
-  init_food(&food);   /* Generates the first food */
+  init_game(); /* Creates a snake of length 8 and generates the first food */
 
   while (TRUE) {
     setup_screen(); /* Draw an empty game frame */
 
     /* Check if the user wants to change the snake's direction or quit */
-    process_input(&snake.direction);
+    process_input();
 
     /* Advance the snake's head to its new position */
-    advance_head(&snake);
+    advance_head();
 
     /* Check if the game is over, in which case the program will terminate */
-    switch (game_state(snake)) {
+    switch (game_state()) {
       case WON:  terminate_game_session("You win!");
       case LOST: terminate_game_session("You lose!");
       case STILL_PLAYING: break;
@@ -35,25 +33,17 @@ int main(void) {
     /* If the snake has consumed the food, it will grow by one */
     /* piece. Otherwise, its tail will be advanced accordingly */
 
-    if (!food.consumed
-      && snake.head->position.row    == food.position.row
-      && snake.head->position.column == food.position.column)
-    {
-      snake.length++;
-      food.consumed = TRUE;
-      score++;
-    }
-    else
-      advance_tail(&snake);
+    if (food_encountered()) grow_snake();
+    else advance_tail();
 
     /* Draw the rest of the current frame */
-    draw_snake(snake);
-    if (!food.consumed) draw_food(food);
+    draw_snake();
+    if (!food_consumed()) draw_food();
 
     render(); /* .. and print it */
 
     /* Generate the next food, if the last one was consumed */
-    if (food.consumed) food = generate_food();
+    if (food_consumed()) generate_food();
 
     /* Finally, apply a small time delay, in order for the snake */
     /* to move with normal velocity and achieve the specified FPS */
