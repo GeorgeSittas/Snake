@@ -12,12 +12,12 @@ This project uses the NCurses C library, so you need to make sure it's already i
 ### Usage
 #### Starting the game
 ```
-cd src
+cd Snake
 make play
 ```
 #### File cleanup
 ```
-cd src
+cd Snake
 make clean
 ```
 
