@@ -4,15 +4,6 @@
 
 #include "snake_types.h"
 
-#define FOOD       '$'
-#define WALL       '#'
-#define NORTH_HEAD '^'
-#define EAST_HEAD  '>'
-#define SOUTH_HEAD 'v'
-#define WEST_HEAD  '<'
-#define SNAKE_BODY 'o'
-#define EMPTY      ' '
-
 extern game_t game;
 
 void init_game(void);
