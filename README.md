@@ -4,6 +4,11 @@ This is a classic snake game written in C. The game window looks like this:
 
 ![](https://imgur.com/njB0HCL.png)
 
+### Install
+```
+git clone https://github.com/GeorgeSittas/Snake.git
+```
+
 ### Prerequisites / Dependencies
 This project uses the NCurses C library, so you need to make sure it's already installed in your system.
 
