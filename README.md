@@ -12,7 +12,7 @@ git clone https://github.com/GeorgeSittas/Snake.git
 ### Prerequisites / Dependencies
 This project uses the NCurses C library, so you need to make sure it's already installed in your system.
 
-([how to install NCurses](https://www.ostechnix.com/how-to-install-ncurses-library-in-linux/))
+([how to install the NCurses library in Linux](https://www.ostechnix.com/how-to-install-ncurses-library-in-linux/))
 
 ### Usage
 #### Starting the game
