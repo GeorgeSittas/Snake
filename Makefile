@@ -1,6 +1,6 @@
 object_files = ./src/main.o ./src/utilities.o ./src/snake.o ./src/screen.o
 header_files = ./include/snake_types.h ./include/snake.h \
-							 ./include/screen.h ./include/utilities.h
+	       ./include/screen.h ./include/utilities.h
 
 CC = gcc
 FLAGS = -Wall
