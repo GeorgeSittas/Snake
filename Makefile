@@ -1,25 +1,24 @@
-object_files = ./src/main.o ./src/utilities.o ./src/snake.o ./src/screen.o
-header_files = ./include/snake_types.h ./include/snake.h \
-	       ./include/screen.h ./include/utilities.h
+OBJ_DIR = ./src
+INC_DIR = ./include
 
-CC = gcc
-FLAGS = -Wall
+OBJS = $(OBJ_DIR)/main.o  $(OBJ_DIR)/snake.o \
+       $(OBJ_DIR)/screen.o $(OBJ_DIR)/utilities.o
+
+CFLAGS = -Wall -I$(INC_DIR)
 LIB = -lncurses
+CC = gcc
 
-snake: $(object_files)
-	$(CC) $(FLAGS) $(LIB) $(object_files) -o snake
+EXEC = snake
 
-main.o: $(header_files)
+$(EXEC): $(OBJS)
+	@$(CC) $(CFLAGS) $(LIB) $(OBJS) -o $(EXEC)
 
-utilities.o: $(header_files)
+.SILENT: $(OBJS) # Silence implicit rule output
+.PHONY: clean
 
-snake.o: $(header_files)
-
-screen.o: $(header_files)
-
-play: snake
-	./snake
+play: $(EXEC)
+	@./$(EXEC)
 
 clean:
 	@echo "Cleaning up .."
-	rm $(object_files) snake
+	@rm -f $(OBJS) $(EXEC)
