@@ -1,8 +1,8 @@
 #include <ncurses.h>
 #include <stdlib.h>
 
-#include "../include/snake.h"
-#include "../include//utilities.h"
+#include "snake.h"
+#include "utilities.h"
 
 int food_row(void) {
   return game.food.position.row;
@@ -57,7 +57,7 @@ bool is_char_in_screen(int row, int col, char ch) {
 }
 
 void terminate_game_session(char *exit_message) {
-  endwin(); /* Exits the curses mode */
+  endwin(); // Exits the curses mode
   printf("%s\nScore: %d\n", exit_message, game.score);
   destroy_snake();
   exit(EXIT_SUCCESS);
