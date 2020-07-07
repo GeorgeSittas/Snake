@@ -1,15 +1,6 @@
 #pragma once
 
-#include <ncurses.h> /* This is needed in order to use the bool type */
-
-#define FOOD       '$'
-#define WALL       '#'
-#define NORTH_HEAD '^'
-#define EAST_HEAD  '>'
-#define SOUTH_HEAD 'v'
-#define WEST_HEAD  '<'
-#define SNAKE_BODY 'o'
-#define EMPTY      ' '
+#include <ncurses.h> // This is needed in order to use the bool type
 
 typedef enum {STILL_PLAYING, WON, LOST} state_t;
 typedef enum {NORTH, EAST, SOUTH, WEST} direction_t;
@@ -29,7 +20,7 @@ typedef struct snake_piece {
   struct snake_piece *next;
 } snake_piece_t;
 
-/* The snake is represented as a linked list of snake pieces */
+// The snake is represented as a linked list of snake pieces
 typedef struct snake {
   int length;
   snake_piece_t *head;
