@@ -1,6 +1,6 @@
 #pragma once
 
-#include <ncurses.h> /* This is needed in order to use the bool type */
+#include <ncurses.h> // This is needed in order to use the bool type
 
 #include "snake.h"
 
@@ -24,10 +24,10 @@ bool is_char_in_screen(int, int, char);
 
 void terminate_game_session(char *);
 
-/* FPS: number of frames per second (basically the frame printing frequency) */
-/* DELAY: time delay needed to achieve the specified FPS (in micro seconds) */
+// FPS: number of frames per second (basically the frame printing frequency)
+// DELAY: time delay needed to achieve the specified FPS (in micro seconds)
 
 #define SEC_IN_MICROSEC 1000000
 
 #define FPS 10
-#define DELAY (SEC_IN_MICROSEC / FPS) /* time = 1 (sec) / frequency */
+#define DELAY (SEC_IN_MICROSEC / FPS) // time = 1 (sec) / frequency
