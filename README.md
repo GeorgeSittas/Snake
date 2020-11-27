@@ -1,6 +1,6 @@
 # Snake
 
-This is a classic snake game written in C. The game window looks like this:
+Goal for this project is to make a [Snake](https://en.wikipedia.org/wiki/Snake_(video_game_genre)) game in C. The game window looks like this:
 
 ![](https://imgur.com/njB0HCL.png)
 
